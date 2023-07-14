@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse String</title>
+</head>
+
+<body>
+    <input type="text" placeholder="Enter a name...">
+    <button type="submit">Reverse It</button>
+    <h2></h2>
+    <script>
+        let x = document.querySelector("input");
+        let y = document.querySelector("button");
+        let z = document.querySelector("h2");
+        let str;
+        y.onclick = () => {
+            str = x.value;
+            let newstr = ""
+            for (let i = str.length - 1; i >= 0; i--) {
+                newstr = newstr + str[i];
+            }
+            z.innerHTML = ""
+            z.innerHTML = newstr;
+        }
+    </script>
+</body>
+
+</html>
